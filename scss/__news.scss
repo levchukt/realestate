@@ -1,0 +1,113 @@
+
+.news {
+    background: #FBFCFC;
+    padding-top: 100px;
+    padding-bottom: 160px;
+    @include tablet {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    
+    @include mobile {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    &__container {}
+
+    &__header {
+        text-align: center;
+        margin-bottom: 34px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 144.2%;
+        letter-spacing: 0.02em;
+        color: #31353B;
+        margin-bottom: 11px;
+        @include tablet{
+            font-size: 30px;
+        }
+        @include mobile{
+            font-size: 24px;
+        }
+    }
+
+    &__subtitle {
+        font-weight: 700;
+        font-size: 23px;
+        line-height: 144.2%;
+        letter-spacing: 0.02em;
+        color: #31353B;
+        @include tablet{
+            font-size: 20px;
+        }
+        @include mobile{
+            font-size: 16px;
+        }
+    }
+        
+
+    &__form {
+        
+        background: #FFFFFF;
+        box-shadow: 0px 163px 80px rgba(0, 0, 0, 0.04), 0px 105.648px 46.8519px rgba(0, 0, 0, 0.0303704), 0px 62.7852px 25.4815px rgba(0, 0, 0, 0.0242963), 0px 32.6px 13px rgba(0, 0, 0, 0.02), 0px 13.2815px 6.51852px rgba(0, 0, 0, 0.0157037), 0px 3.01852px 3.14815px rgba(0, 0, 0, 0.00962963);
+    }
+}
+
+.form-news {
+    max-width: 686px;
+    margin: 0 auto;
+    padding: 30px;
+    display: flex;
+    gap: 15px;
+    @include mobile {
+            margin: 0px -15px;
+            padding: 15px;
+            flex-direction: column;
+        }
+    &__content {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__label {
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 144.2%;
+        letter-spacing: 0.02em;
+        color: #31353B;
+        opacity: 0.2;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    &__input {
+        font-weight: 700;
+        font-size: 20px;
+        width: 100%;
+        flex: 1 1 auto;
+        padding-left: 10px;
+        min-height: 30px;
+    }
+
+    &__button {
+        text-align: center;
+        height: 72px;
+        padding: 0px 40px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 144.2%;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        background-color: #F85A47;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        &:hover{
+            background-color: #d54d3e;
+        }
+        box-shadow: 0px 100px 80px rgba(248, 90, 71, 0.07), 0px 64.8148px 46.8519px rgba(248, 90, 71, 0.0531481), 0px 38.5185px 25.4815px rgba(248, 90, 71, 0.0425185), 0px 20px 13px rgba(248, 90, 71, 0.035), 0px 8.14815px 6.51852px rgba(248, 90, 71, 0.0274815), 0px 1.85185px 3.14815px rgba(248, 90, 71, 0.0168519);
+    }
+}

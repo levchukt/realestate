@@ -1,0 +1,148 @@
+
+.featured {
+    padding-top: 110px;
+    padding-bottom: 110px;
+    @include tablet {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    
+    @include mobile {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    &__container {}
+
+    &__title {
+        margin-bottom: 95px;
+        @include tablet{
+            margin-bottom: 50px;
+        }
+        @include mobile{
+            margin-bottom: 30px;
+        }
+    }
+
+    &__body {
+        background-color: #F1FFFF;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 77px;
+        row-gap: 40px;
+        padding: 40px 40px 80px;
+        @include tablet{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        @include mobile{
+            margin: 0 -15px;
+            padding: 20px 15px 40px 15px;
+        }
+    }
+
+    &__images {}
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.title {
+
+    &__center {}
+}
+
+.images-featured {
+    display: grid;
+    justify-items: center;
+    &__item {}
+    &__item img{
+        max-width: 100%;
+    }
+
+    &__item-mini{
+        margin: 0px 20px;
+        margin-top: -114px;
+        filter: drop-shadow(0px 163px 80px rgba(0, 0, 0, 0.04)) drop-shadow(0px 105.648px 46.8519px rgba(0, 0, 0, 0.0303704)) drop-shadow(0px 62.7852px 25.4815px rgba(0, 0, 0, 0.0242963)) drop-shadow(0px 32.6px 13px rgba(0, 0, 0, 0.02)) drop-shadow(0px 13.2815px 6.51852px rgba(0, 0, 0, 0.0157037)) drop-shadow(0px 3.01852px 3.14815px rgba(0, 0, 0, 0.00962963)) drop-shadow(48px 58px 44px rgba(0, 0, 0, 0.09));
+    }
+}
+
+.content-featured {
+    &__body{
+        
+        @include mobf{
+            flex: 1 1 auto;
+                max-width: 412px;
+                padding-top: 40px;
+        }
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 31px;
+        line-height: 1.35;
+        @include mobile{
+            font-size: 24px;
+        }
+        color: #000000;
+        margin-bottom: 28px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #545A58;
+        margin-bottom: 42px;
+    }
+
+    &__options {}
+
+    &__button {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: #FFFFFF;
+        background-color: #F85A47;
+        box-shadow: 0px 100px 80px rgba(248, 90, 71, 0.07), 0px 64.8148px 46.8519px rgba(248, 90, 71, 0.0531481), 0px 38.5185px 25.4815px rgba(248, 90, 71, 0.0425185), 0px 20px 13px rgba(248, 90, 71, 0.035), 0px 8.14815px 6.51852px rgba(248, 90, 71, 0.0274815), 0px 1.85185px 3.14815px rgba(248, 90, 71, 0.0168519);
+        border-radius: 5px;
+        padding: 16px 35px;
+        display: block;
+        transition: all 0.3s ease 0s;
+        &:hover{
+            background-color: #d54d3e;
+        }
+        @include mobf{
+            max-width: 412px;
+        }
+    }
+}
+
+.options-featured {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    @include smallmobile{
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 35px;
+    }
+    margin-bottom: 54px;
+    gap: 35px;
+    &__option {}
+
+    &__label {
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 23px;
+        color: #000000;
+        margin-bottom: 12px;
+    }
+
+    &__value {
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 23px;
+        color: #545A58;
+    }
+}
